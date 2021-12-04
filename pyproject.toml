@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dansmabot"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Cheysson <arthur@cheysson.fr>"]
+packages = [
+    { include = "dansmabot", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-telegram-bot = "^13.8.1"
+SQLAlchemy = "^1.4.27"
+
+[tool.poetry.dev-dependencies]
+black = "^21.11b1"
+ipython = "^7.30.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
