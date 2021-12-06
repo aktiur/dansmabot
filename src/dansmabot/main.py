@@ -38,7 +38,7 @@ MESSAGE_SIGNALEMENT = [
     "Je t'ajoute à la liste, {}.",
     "Merci {}, j'ai rajouté ton nom.",
     "C'est parfait, {}.",
-    "{}, un de plus. Il en manque encore ?",
+    "{}, un nom de plus. Il en manque encore ?",
     "{}... ça se prononce comme ça s'écrit ?",
     "Ah, {}, je sais parfaitement à qui vous attribuer !",
 ]
