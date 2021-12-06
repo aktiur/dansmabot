@@ -156,7 +156,8 @@ def commande_sesignaler(update: Update, context: CallbackContext):
                 context.bot.send_message(
                     chat_id=chat.id,
                     text=f"J'ai tout le monde ! C'est parfait, je lance le tirage au sort...\n"
-                    'Et voilà ! <a href="{bot_url(chat.id)}">Venez me voir en privé</a> pour savoir à qui offrir un message !',
+                    f'Et voilà ! <a href="{bot_url(chat.id)}">Venez me voir en privé</a> pour savoir à '
+                    "qui offrir un cadeau !",
                     parse_mode=PARSEMODE_HTML,
                 )
 
