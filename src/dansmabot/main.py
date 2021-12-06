@@ -187,7 +187,9 @@ def commande_tirage(update: Update, context: CallbackContext):
     # mettre à jour la liste des membres pour éliminer ceux qui ne sont plus dans le chat
     membres = details_membres(chat, context)
 
-    if len(membres) != member_count:
+    force = len(context.args) >= 1 and context.args[0].lower() in ["force", "forcé"]
+
+    if not force and len(membres) != member_count:
         context.bot.send_message(
             chat.id,
             text=f"Je n'ai pas encore identifié tout le monde ! {member_count - len(membres)} personnes doivent encore se signaler.",
